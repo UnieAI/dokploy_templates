@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  qwen2.5_0.5b_instruct:
+    image: registry.unieai.com/unieai/uifw2:357f1be
+    volumes:
+      - "./weight:/weight"
+    ports:
+      - 8910:8910
+    environment:
+      CUDA_VISIBLE_DEVICES: "0"
+    entrypoint: uifw
+    command: ["serve", "api_server", "Qwen/Qwen2.5-0.5B-Instruct", "--log-level", "INFO", "--model-name", "Qwen2.5-0.5B-Instruct", "--eager-mode", "--cache-max-entry-count", "0.4", "--enable-prefix-caching", "--chat-template", "qwen2d5", "--dtype", "float16", "--session-len", "16384", "--server-port", "8910"]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["0"]
+              capabilities: [gpu]

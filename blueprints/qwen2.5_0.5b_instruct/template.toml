@@ -1,0 +1,11 @@
+[variables]
+main_domain = "${domain}"
+
+[config]
+env = []
+mounts = []
+
+[[config.domains]]
+serviceName = "qwen2.5_0.5b_instruct"
+port = 8_910
+host = "${main_domain}"
