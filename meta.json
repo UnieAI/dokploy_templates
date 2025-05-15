@@ -11,5 +11,16 @@
       "docs": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
     },
     "tags": ["llm"]
+  },
+  {
+    "id": "official_website",
+    "name": "Official-Website",
+    "version": "0.0.0",
+    "description": "This is the official website of UnieAI",
+    "logo": "website.jpg",
+    "links": {
+      "github": "https://github.com/UnieAI/official-website"
+    },
+    "tags": ["llm"]
   }
 ]
