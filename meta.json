@@ -17,9 +17,20 @@
     "name": "Official-Website",
     "version": "0.0.0",
     "description": "This is the official website of UnieAI",
-    "logo": "website.jpg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/UnieAI/official-website"
+    },
+    "tags": ["llm"]
+  },
+  {
+    "id": "vllm_service",
+    "name": "vllm-service",
+    "version": "0.0.0",
+    "description": "This is the vllm service.",
+    "logo": "vllm.png",
+    "links": {
+      "github": "https://github.com/vllm-project/vllm"
     },
     "tags": ["llm"]
   }
