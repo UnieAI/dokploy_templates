@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  unieinfra:
+    image: vllm/vllm-openai:latest
+    runtime: nvidia  # Required for GPU access
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    ports:
+      - "8000"
+    environment:
+      - NCCL_SHM_DISABLE=1  # Bypass shared memory transport
+      - NCCL_DEBUG=INFO  # Enable detailed error logging
+    shm_size: "8gb"
+    entrypoint: vllm
+    command: ["serve", "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original", "--served-model-name", "Llama_4_Maverick_17B_128E_Instruct_Original"]
