@@ -15,8 +15,8 @@ services:
     #entrypoint: sleep                                                                                                 
     #command: ["36000"]                                                                                                
     entrypoint: uifw                                                                                                   
-    command: ["serve", "api_server", "Qwen/Qwen2.5-0.5B-Instruct", "--log-level", "INFO", "--model-name", "Qwen2.5-0.5B-Instruct", "--eager-mode", "--cache-max-entry-count", "0.4", "--enable-prefix-caching", "--chat-template", "qwen2d5", "--dt
-ype", "float16", "--session-len", "16384"]                                                                            
+    command: ["serve", "api_server", "Qwen/Qwen2.5-0.5B-Instruct", "--server-port", "35640", "--log-level", "INFO", "--model-name", "Qwen2.5-0.5B-Instruct", "--eager-mode", "--cache-max-entry-count", "0.4", "--enable-prefix-caching", "--chat-template", "qwen2d5", 
+              "--dtype", "float16", "--session-len", "16384"]                                                                            
     deploy:                                                                                                            
       resources:                                                                                                       
         reservations:                                                                                                  
