@@ -1,5 +1,22 @@
 [
   {
+    "id": "uifw2",
+    "name": "uifw2",
+    "version": "0.0.0",
+    "description": "UIFW2 allows user to access all large models through the standard OpenAI API format.",
+    "logo": "unieai.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://api.exp.unieai.com/",
+      "docs": "https://api.exp.unieai.com/"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
     "id": "u1_mini_2503_b3",
     "name": "u1-mini-2503-b3",
     "version": "0.0.0",
