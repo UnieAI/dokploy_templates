@@ -1,0 +1,23 @@
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    restart: unless-stopped
+    entrypoint: /bin/bash
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    command: >
+      -c '
+        ollama serve &
+        (until (
+            exec 3<>/dev/tcp/localhost/11434 &&
+            echo -e "GET / HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n" >&3 &&
+            grep "Ollama is running" <&3
+          ); do echo waiting ollama serve... && sleep 1; done;) &&
+        ollama pull qwen3:0.6b &&
+        sleep infinity
+      '

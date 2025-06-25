@@ -1,5 +1,22 @@
 [
   {
+    "id": "ollama_qwen3",
+    "name": "ollama-qwen3",
+    "version": "0.0.0",
+    "description": "Get up and running with large language models.",
+    "logo": "ollama.png",
+    "links": {
+      "github": "https://github.com/ollama/ollama",
+      "website": "https://ollama.com/",
+      "docs": "https://ollama.com/"
+    },
+    "tags": [
+      "llm",
+      "ollama",
+      "NVIDIA"
+    ]
+  },
+  {
     "id": "uifw2",
     "name": "uifw2",
     "version": "0.0.0",
