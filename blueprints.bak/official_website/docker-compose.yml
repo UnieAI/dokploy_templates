@@ -1,0 +1,4 @@
+version: "3.8"
+services:
+  official_website:
+    image: registry.unieai.com/unieai/official-website@sha256:8044da4f889e38603f07c1f28b6e74ba0f09580e1f4a9ef5ea4fd331a09b0143

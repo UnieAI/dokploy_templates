@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  unieinfra:
+    image: vllm/vllm-openai:latest
+    runtime: nvidia  # Required for GPU access
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    ports:
+      - "8000"
+    environment:
+      - NCCL_SHM_DISABLE=1  # Bypass shared memory transport
+      - NCCL_DEBUG=INFO  # Enable detailed error logging
+    shm_size: "8gb"
+    entrypoint: vllm
+    command: ["serve", "unieai/aqua-mini-2502-b3", "--served-model-name", "aqua_mini_2502_b3"]
