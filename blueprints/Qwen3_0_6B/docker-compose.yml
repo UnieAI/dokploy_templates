@@ -17,4 +17,4 @@ services:
       - NCCL_DEBUG=INFO  # Enable detailed error logging
     shm_size: "8gb"
     entrypoint: vllm
-    command: ["serve", "Qwen/Qwen2.5-0.5B-Instruct", "--served-model-name", "Qwen3_0_6B"]
+    command: ["serve", "Qwen/Qwen3-0.6B", "--served-model-name", "Qwen3_0_6B"]
