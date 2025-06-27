@@ -1,19 +1,17 @@
 [
   {
-    "id": "uifw2",
-    "name": "uifw2",
+    "id": "llm_metrics_lab",
+    "name": "llm-metrics-lab",
     "version": "0.0.0",
-    "description": "UIFW2 allows user to access all large models through the standard OpenAI API format.",
+    "description": "LLM thoughput monitoring metrics.",
     "logo": "unieai.png",
     "links": {
       "github": "https://github.com",
-      "website": "https://api.exp.unieai.com/",
-      "docs": "https://api.exp.unieai.com/"
+      "website": "https://github.com/ZoneTwelve/LLM-Metrics-Lab",
+      "docs": "https://github.com/ZoneTwelve/LLM-Metrics-Lab"
     },
     "tags": [
-      "llm",
-      "unieinfra",
-      "NVIDIA"
+      "llm"
     ]
   },
   {
