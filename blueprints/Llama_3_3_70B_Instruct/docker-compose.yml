@@ -17,4 +17,5 @@ services:
       - NCCL_DEBUG=INFO  # Enable detailed error logging
     shm_size: "8gb"
     entrypoint: vllm
-    command: ["serve", "meta-llama/Llama-3.3-70B-Instruct", "--served-model-name", "Llama_3_3_70B_Instruct"]
+    command: ["serve", "meta-llama/Llama-3.3-70B-Instruct", 
+              "--served-model-name", "Llama_3_3_70B_Instruct"]

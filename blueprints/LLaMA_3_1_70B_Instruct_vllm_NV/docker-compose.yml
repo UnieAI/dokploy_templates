@@ -1,0 +1,18 @@
+services:                                                                                                              
+  llama_3.1_70B_instruct:                                                                                                            
+    image: vllm/vllm-openai:latest
+    runtime: nvidia  # Required for GPU access                                                                                          
+    environment:                                                                                                       
+      - NCCL_SHM_DISABLE=1  # Bypass shared memory transport
+      - NCCL_DEBUG=INFO  # Enable detailed error logging 
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}                                                                                                                                                                            
+    shm_size: "8gb"
+    entrypoint: vllm  
+    command: ["serve", "meta-llama/Llama-3.1-70B-Instruct", 
+              "--served-model-name", "Llama-3.1-70B-Instruct"]                                                                        
+    deploy:                                                                                                            
+      resources:                                                                                                       
+        reservations:                                                                                                  
+          devices:                                                                                                     
+            - driver: nvidia                                                                                      
+              capabilities: [gpu]                                                                                      

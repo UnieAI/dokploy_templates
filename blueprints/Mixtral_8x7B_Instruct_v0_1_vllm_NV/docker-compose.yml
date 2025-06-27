@@ -1,0 +1,18 @@
+services:                                                                                                              
+  mistral_8x7B_instruct_v0.1:                                                                                                            
+    image: vllm/vllm-openai:latest
+    runtime: nvidia  # Required for GPU access                                                                                         
+    environment:                                                                                                       
+      - NCCL_SHM_DISABLE=1  # Bypass shared memory transport
+      - NCCL_DEBUG=INFO  # Enable detailed error logging
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+    shm_size: "8gb"
+    entrypoint: vllm  
+    command: ["serve", "mistralai/Mixtral-8x7B-Instruct-v0.1", 
+              "--served-model-name", "Mixtral-8x7B-Instruct-v0.1"]                                                                        
+    deploy:                                                                                                            
+      resources:                                                                                                       
+        reservations:                                                                                                  
+          devices:                                                                                                     
+            - driver: nvidia                                                                                      
+              capabilities: [gpu]                                                                                      
