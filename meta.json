@@ -1,6 +1,6 @@
 [
   {
-    "id": "llm_metrics_lab",
+    "id": "LLM_Metrics_Lab",
     "name": "llm-metrics-lab",
     "version": "0.0.0",
     "description": "LLM thoughput monitoring metrics.",
