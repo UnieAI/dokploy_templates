@@ -64,7 +64,7 @@ port = 8000
 host = "${{main_domain}}"
 
 [config.env]
-HUGGING_FACE_HUB_TOKEN=${{HUGGING_FACE_HUB_TOKEN}}
+HUGGING_FACE_HUB_TOKEN="${{HUGGING_FACE_HUB_TOKEN}}"
 """
 
 def main():
