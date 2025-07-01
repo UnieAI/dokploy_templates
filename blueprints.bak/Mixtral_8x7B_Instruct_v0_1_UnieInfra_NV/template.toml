@@ -1,0 +1,14 @@
+[variables]
+main_domain = "${domain}"
+
+[config]
+env = []
+mounts = []
+
+[[config.domains]]
+serviceName = "mixtral_8x7B_instruct_v0.1"
+port = 35640
+host = "${main_domain}"
+
+[config.env]
+HUGGING_FACE_HUB_TOKEN=$HUGGING_FACE_HUB_TOKEN

@@ -1,0 +1,25 @@
+services:                                                                                                              
+  llama_3.1_70B_instruct:                                                                                                            
+    image: registry.unieai.com/unieai/uifw2:357f1be
+    volumes:                                                                                                           
+      - "./weight:/weight"                                                                                                                                                                                             
+    environment:                                                                                                       
+      - CUDA_VISIBLE_DEVICES=0
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}                                                                                                                                                                               
+    entrypoint: uifw                                                                                                   
+    command: ["serve", "api_server", "meta-llama/Llama-3.1-70B-Instruct", 
+              "--server-port", "35640", 
+              "--log-level", "INFO", 
+              "--model-name", "meta-llama/Llama-3.1-70B-Instruct", 
+              "--eager-mode", 
+              "--cache-max-entry-count", "0.4", 
+              "--enable-prefix-caching", 
+              "--dtype", "float16", 
+              "--session-len", "16384"]                                                                            
+    deploy:                                                                                                            
+      resources:                                                                                                       
+        reservations:                                                                                                  
+          devices:                                                                                                     
+            - driver: nvidia                                                                                           
+              device_ids: ["0"]                                                                                        
+              capabilities: [gpu]                                                                                      

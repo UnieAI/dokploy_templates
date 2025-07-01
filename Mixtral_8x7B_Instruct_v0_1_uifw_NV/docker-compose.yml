@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  unieinfra:
+    image: registry.unieai.com/unieverse-private/uifw2.cuda.l.064
+    volumes:
+    - ./weight:/weight
+    ports:
+    - 35640:35640
+    runtime: nvidia
+    environment:
+    - NCCL_SHM_DISABLE=1
+    - NCCL_DEBUG=INFO
+    - CUDA_VISIBLE_DEVICES=0
+    - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+    shm_size: 8gb
+    entrypoint: uifw
+    command: [serve, api_server, mistral/Mixtral-8x7B-Instruct-v0.1, --server-port,
+      '35640', --log-level, INFO, --model-name, Mixtral-8x7B-Instruct-v0.1, --session-len,
+      '1024', --dtype, float16, --cache-max-entry-count, '0.1']
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities:
+            - gpu
