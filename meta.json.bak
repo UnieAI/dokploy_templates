@@ -15,69 +15,324 @@
     ]
   },
   {
-    "id": "Llama_3_1_8B_Instruct_uifw_NV",
-    "name": "Llama-3.1-8B-Instruct",
+    "id": "u1_mini_2503_b3",
+    "name": "u1-mini-2503-b3",
     "version": "0.0.0",
-    "description": "Llama-3.1-8B-Instruct model served via UnieInfra.",
-    "logo": "nvidia.png",
+    "description": "u1-mini-2503-b3 model served via UnieInfra.",
+    "logo": "unieai.png",
     "links": {
       "github": "https://github.com",
-      "website": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "docs": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+      "website": "https://huggingface.co/unieai/u1-mini-2503-b3",
+      "docs": "https://huggingface.co/unieai/u1-mini-2503-b3"
     },
     "tags": [
-      "llm model",
+      "llm",
       "unieinfra",
       "NVIDIA"
     ]
   },
   {
-    "id": "Llama_3_1_70B_Instruct_uifw_NV",
-    "name": "Llama-3.1-70B-Instruct",
+    "id": "aqua_mini_2502_b3",
+    "name": "aqua-mini-2502-b3",
     "version": "0.0.0",
-    "description": "Llama-3.1-70B-Instruct model served via UnieInfra.",
-    "logo": "nvidia.png",
+    "description": "aqua-mini-2502-b3 model served via UnieInfra.",
+    "logo": "unieai.png",
     "links": {
       "github": "https://github.com",
-      "website": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
-      "docs": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct"
+      "website": "https://huggingface.co/unieai/aqua-mini-2502-b3",
+      "docs": "https://huggingface.co/unieai/aqua-mini-2502-b3"
     },
     "tags": [
-      "llm model",
+      "llm",
       "unieinfra",
       "NVIDIA"
     ]
   },
   {
-    "id": "Llama_3_2_11B_Vision_uifw_NV",
-    "name": "Llama-3.2-11B-Vision",
+    "id": "Llama_4_Maverick_17B_128E_Instruct_Original",
+    "name": "Llama-4-Maverick-17B-128E-Instruct-Original",
     "version": "0.0.0",
-    "description": "Llama-3.2-11B-Vision model served via UnieInfra.",
-    "logo": "nvidia.png",
+    "description": "Llama-4-Maverick-17B-128E-Instruct-Original model served via UnieInfra.",
+    "logo": "meta.png",
     "links": {
       "github": "https://github.com",
-      "website": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision",
-      "docs": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision"
+      "website": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original",
+      "docs": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original"
     },
     "tags": [
-      "llm model",
+      "llm",
       "unieinfra",
       "NVIDIA"
     ]
   },
   {
-    "id": "Mixtral_8x7B_Instruct_v0_1_uifw_NV",
-    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "id": "Llama_Guard_4_12B",
+    "name": "Llama-Guard-4-12B",
     "version": "0.0.0",
-    "description": "Mixtral-8x7B-Instruct-v0.1n model served via UnieInfra.",
-    "logo": "nvidia.png",
+    "description": "Llama-Guard-4-12B model served via UnieInfra.",
+    "logo": "meta.png",
     "links": {
       "github": "https://github.com",
-      "website": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
-      "docs": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1"
+      "website": "https://huggingface.co/meta-llama/Llama-Guard-4-12B",
+      "docs": "https://huggingface.co/meta-llama/Llama-Guard-4-12B"
     },
     "tags": [
-      "llm model",
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Llama_4_Scout_17B_16E",
+    "name": "Llama-4-Scout-17B-16E",
+    "version": "0.0.0",
+    "description": "Llama-4-Scout-17B-16E model served via UnieInfra.",
+    "logo": "meta.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E",
+      "docs": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Llama_3_3_70B_Instruct",
+    "name": "Llama-3.3-70B-Instruct",
+    "version": "0.0.0",
+    "description": "Llama-3.3-70B-Instruct model served via UnieInfra.",
+    "logo": "meta.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "docs": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Qwen3_0_6B",
+    "name": "Qwen3-0.6B",
+    "version": "0.0.0",
+    "description": "Qwen3-0.6B model served via UnieInfra.",
+    "logo": "qwen.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "docs": "https://huggingface.co/Qwen/Qwen3-0.6B"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Qwen3_1_7B",
+    "name": "Qwen3-1.7B",
+    "version": "0.0.0",
+    "description": "Qwen3-1.7B model served via UnieInfra.",
+    "logo": "qwen.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "docs": "https://huggingface.co/Qwen/Qwen3-1.7B"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Qwen3_4B",
+    "name": "Qwen3-4B",
+    "version": "0.0.0",
+    "description": "Qwen3-4B model served via UnieInfra.",
+    "logo": "qwen.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/Qwen/Qwen3-4B",
+      "docs": "https://huggingface.co/Qwen/Qwen3-4B"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Qwen3_8B",
+    "name": "Qwen3-8B",
+    "version": "0.0.0",
+    "description": "Qwen3-8B model served via UnieInfra.",
+    "logo": "qwen.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/Qwen/Qwen3-8B",
+      "docs": "https://huggingface.co/Qwen/Qwen3-8B"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Pixtral_Large_Instruct_2411",
+    "name": "Pixtral-Large-Instruct-2411",
+    "version": "0.0.0",
+    "description": "Pixtral-Large-Instruct-2411 model served via UnieInfra.",
+    "logo": "mistral.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+      "docs": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Mistral_Large_Instruct_2411",
+    "name": "Mistral-Large-Instruct-2411",
+    "version": "0.0.0",
+    "description": "Mistral-Large-Instruct-2411 model served via UnieInfra.",
+    "logo": "mistral.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2411",
+      "docs": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2411"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Mistral_Small_3_1_24B_Instruct_2503",
+    "name": "Mistral-Small-3.1-24B-Instruct-2503",
+    "version": "0.0.0",
+    "description": "Mistral-Small-3.1-24B-Instruct-2503 model served via UnieInfra.",
+    "logo": "mistral.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "docs": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "DeepSeek_R1",
+    "name": "DeepSeek-R1",
+    "version": "0.0.0",
+    "description": "DeepSeek-R1 model served via UnieInfra.",
+    "logo": "deepseek.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "docs": "https://huggingface.co/deepseek-ai/DeepSeek-R1"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "DeepSeek_V3_Base",
+    "name": "DeepSeek-V3-Base",
+    "version": "0.0.0",
+    "description": "DeepSeek-V3-Base model served via UnieInfra.",
+    "logo": "deepseek.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/deepseek-ai/DeepSeek-V3-Base",
+      "docs": "https://huggingface.co/deepseek-ai/DeepSeek-V3-Base"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "deepseek_vl2",
+    "name": "deepseek-vl2",
+    "version": "0.0.0",
+    "description": "deepseek-vl2 model served via UnieInfra.",
+    "logo": "deepseek.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/deepseek-ai/deepseek-vl2",
+      "docs": "https://huggingface.co/deepseek-ai/deepseek-vl2"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Phi_4_mini_reasoning",
+    "name": "Phi-4-mini-reasoning",
+    "version": "0.0.0",
+    "description": "Phi-4-mini-reasoning model served via UnieInfra.",
+    "logo": "microsoft.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/microsoft/Phi-4-mini-reasoning",
+      "docs": "https://huggingface.co/microsoft/Phi-4-mini-reasoning"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Phi_3_medium_4k_instruct",
+    "name": "Phi-3-medium-4k-instruct",
+    "version": "0.0.0",
+    "description": "Phi-3-medium-4k-instruct model served via UnieInfra.",
+    "logo": "microsoft.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "docs": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct"
+    },
+    "tags": [
+      "llm",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Phi_3_medium_128k_instruct",
+    "name": "Phi-3-medium-128k-instruct",
+    "version": "0.0.0",
+    "description": "Phi-3-medium-128k-instruct model served via UnieInfra.",
+    "logo": "microsoft.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct",
+      "docs": "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct"
+    },
+    "tags": [
+      "llm",
       "unieinfra",
       "NVIDIA"
     ]
