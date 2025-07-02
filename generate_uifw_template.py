@@ -35,7 +35,7 @@ def generate_docker_compose(service_name: str, model_repo: str, model_name: str)
                 "CUDA_VISIBLE_DEVICES=0",
                 "HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}"
             ],
-            "shm_size": "8gb",
+            "shm_size": "32gb",
             "entrypoint": "uifw",
             "command": FlowStyleList([
                 "serve", "api_server",  model_repo,

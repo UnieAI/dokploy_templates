@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  unieinfra:
+    #! resource: 50GiB
+    image: registry.unieai.com/unieverse-private/vllm.gaudi.072
+    runtime: habana
+    environment:
+    - VLLM_TARGET_DEVICE=hpu
+    - hw=HL-325L
+    - HABANA_VISIBLE_DEVICES=0
+    - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+    cap_add:
+    - SYS_NICE
+    volumes:
+    - "./weight:/weight"
+    ports:
+    - 35640:35640
+    shm_size: 32gb
+    entrypoint: vllm
+    command: [serve, meta-llama/Llama-3.1-8B-Instruct, --port, '35640', --host, 0.0.0.0,
+      --tensor-parallel-size, '1', --served-model-name, Llama-3.1-8B-Instruct, --trust_remote_code,
+      --enable-prefix-caching, --max-model-len, '2048', --enforce-eager]
+    ipc: host
