@@ -5,10 +5,10 @@ template_type = "model"
 [config]
 env = [
     "TEMPLATE_TYPE=${template_type}",
-    "HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}",
+    "IMAGE_VERSION=${IMAGE_VERSION}",
     "MODEL_NAME=${MODEL_NAME}",
-    "NUM_GPU=${NUM_GPU}",
-    "MODEL_LENGTH=${MODEL_LENGTH}"
+    "MODEL_CONTEXT_LENGTH=${MODEL_CONTEXT_LENGTH}"
+    "HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}",
 ]
 mounts = []
 
