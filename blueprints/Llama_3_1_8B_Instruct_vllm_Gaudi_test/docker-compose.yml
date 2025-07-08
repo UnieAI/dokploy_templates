@@ -11,12 +11,6 @@ services:
     shm_size: 32gb
     entrypoint: vllm
     command: >
-      bash -c "
-      vllm serve ${MODEL_NAME} \
-      --port 35640 \
-      --host 0.0.0.0 \
-      --tensor-parallel-size 1 \
-      --trust_remote_code \
-      --enable-prefix-caching \
-      --max-model-len ${MODEL_CONTEXT_LENGTH} \
-      --enforce-eager"
+      -c "vllm serve ${MODEL_NAME} --port 35640 --host 0.0.0.0
+      --tensor-parallel-size 1 --trust_remote_code
+      --enable-prefix-caching --max-model-len ${MODEL_CONTEXT_LENGTH} --enforce-eager"

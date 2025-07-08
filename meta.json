@@ -84,7 +84,7 @@
   },
   {
     "id": "Llama_3_1_8B_Instruct_vllm_Gaudi_test",
-    "name": "LLM Deploy Test",
+    "name": "LLM_Deploy_Test",
     "version": "0.0.0",
     "description": "Test template for LLM deploy.",
     "logo": "habana.png",
