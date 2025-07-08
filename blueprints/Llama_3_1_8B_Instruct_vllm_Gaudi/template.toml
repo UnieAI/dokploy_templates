@@ -1,12 +1,13 @@
 [variables]
 main_domain = "${domain}"
+template_type = "model"
 
 [config]
 env = [
+  "TEMPLATE_TYPE=${template_type}",
   "HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}"
 ]
 mounts = []
-template = "model"
 
 [[config.domains]]
 serviceName = "unieinfra"
