@@ -1,13 +1,15 @@
 [variables]
 main_domain = "${domain}"
+template = "model"
 
 [config]
+env = [
+  "TEMPLATE=${template}",
+  "HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}"
+]
 mounts = []
 
 [[config.domains]]
 serviceName = "unieinfra"
 port = 8000
 host = "${main_domain}"
-
-[config.env]
-HUGGING_FACE_HUB_TOKEN="${HUGGING_FACE_HUB_TOKEN}"
