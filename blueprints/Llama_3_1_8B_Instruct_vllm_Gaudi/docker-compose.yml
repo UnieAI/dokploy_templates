@@ -1,7 +1,7 @@
+#! unieinfra.resource: 50GiB
 version: '3.8'
 services:
   unieinfra:
-    #! resource: 50GiB
     image: registry.unieai.com/unieverse-private/vllm.gaudi.072
     runtime: habana
     environment:

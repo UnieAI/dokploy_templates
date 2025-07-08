@@ -1,7 +1,7 @@
+#! unieinfra.resource: 24GiB
 version: '3.8'
 services:
   unieinfra:
-    #! resource: 24GiB
     image: registry.unieai.com/unieverse-private/uifw2.cuda.l.064
     volumes:
     - "./weight:/weight"
