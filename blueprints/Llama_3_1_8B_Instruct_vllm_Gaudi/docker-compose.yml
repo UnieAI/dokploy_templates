@@ -6,8 +6,12 @@ services:
     runtime: habana
     environment:
       - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+      - MODEL_NAME=${MODEL_NAME}
+      - NUM_GPU=${NUM_GPU}
+      - MODEL_LENGTH=${MODEL_LENGTH}
     shm_size: 32gb
     entrypoint: vllm
-    command: [serve, ${MODEL_NAME}, --port, '35640', --host, 0.0.0.0,
-      --tensor-parallel-size, ${NUM_GPU}, --trust_remote_code,
-      --enable-prefix-caching, --max-model-len, ${MODEL_LENGTH}, --enforce-eager]
+    command: >
+      -c "vllm serve ${MODEL_NAME} --port 35640 --host 0.0.0.0
+      --tensor-parallel-size ${NUM_GPU} --trust_remote_code
+      --enable-prefix-caching --max-model-len ${MODEL_LENGTH} --enforce-eager"
