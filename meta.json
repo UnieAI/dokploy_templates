@@ -83,15 +83,15 @@
     ]
   },
   {
-    "id": "Llama_3_1_8B_Instruct_vllm_Gaudi_test",
-    "name": "LLM_Deploy_Test",
+    "id": "vllm_Gaudi_test",
+    "name": "vllm_Gaudi_test",
     "version": "0.0.0",
     "description": "Test template for LLM deploy.",
     "logo": "habana.png",
     "links": {
       "github": "https://github.com",
-      "website": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "docs": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+      "website": "https://huggingface.co",
+      "docs": "https://huggingface.co"
     },
     "tags": [
       "llm model",
