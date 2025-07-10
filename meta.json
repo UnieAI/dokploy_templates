@@ -15,6 +15,23 @@
     ]
   },
   {
+    "id": "LLM_uifw2_Nvidia",
+    "name": "LLM_uifw2_Nvidia",
+    "version": "0.0.0",
+    "description": "Deploying an LLM on NVIDIA machines using UnieInfra inference engine.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co",
+      "docs": "https://huggingface.co"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
     "id": "Llama_3_1_8B_Instruct_uifw_NV",
     "name": "Llama-3.1-8B-Instruct",
     "version": "0.0.0",
@@ -83,10 +100,10 @@
     ]
   },
   {
-    "id": "vllm_Gaudi_test",
-    "name": "vllm_Gaudi_test",
+    "id": "LLM_vllm_Gaudi",
+    "name": "LLM_vllm_Gaudi",
     "version": "0.0.0",
-    "description": "Test template for LLM deploy.",
+    "description": "Deploying an LLM on Gaudi machines using vLLM 0.7.2 inference engine.",
     "logo": "habana.png",
     "links": {
       "github": "https://github.com",

@@ -1,0 +1,26 @@
+#! unieinfra.resource: 50GiB
+version: '3.8'
+services:
+  unieinfra:
+    image: nctu6/vllm.gaudi.072
+    runtime: habana
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+      - MODEL_NAME=${MODEL_NAME}
+      - MODEL_CONTEXT_LENGTH=${MODEL_CONTEXT_LENGTH}
+      - VLLM_TARGET_DEVICE=hpu
+      - hw=HL-325L
+      - HABANA_VISIBLE_DEVICES=all
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    shm_size: 32gb
+    entrypoint: vllm
+    command: >
+      serve ${MODEL_NAME} 
+      --port 35640 
+      --host 0.0.0.0 
+      --tensor-parallel-size 1 
+      --trust-remote-code 
+      --enable-prefix-caching 
+      --max-model-len ${MODEL_CONTEXT_LENGTH} 
+      --enforce-eager
+    ipc: host

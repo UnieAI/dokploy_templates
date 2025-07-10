@@ -1,0 +1,18 @@
+[variables]
+main_domain = "${domain}"
+template_type = "model"
+
+[config]
+env = [
+    "TEMPLATE_TYPE=${template_type}",
+    "IMAGE_VERSION=${IMAGE_VERSION}",
+    "MODEL_NAME=${MODEL_NAME}",
+    "MODEL_CONTEXT_LENGTH=${MODEL_CONTEXT_LENGTH}",
+    "HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}"
+]
+mounts = []
+
+[[config.domains]]
+serviceName = "unieinfra"
+port = 35640
+host = "${main_domain}"
