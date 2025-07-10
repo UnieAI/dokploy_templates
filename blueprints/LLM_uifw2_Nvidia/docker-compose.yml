@@ -1,4 +1,3 @@
-#! unieinfra.resource: 24GiB
 version: '3.8'
 services:
   unieinfra:
@@ -12,13 +11,13 @@ services:
       - NCCL_DEBUG=INFO
       - CUDA_VISIBLE_DEVICES=0
     shm_size: 32gb
+    entrypoint: python3 -m uifw.launch_server
     command: >
-      serve api_server ${MODEL_NAME} 
-      --server-port 35640 
-      --log-level INFO
-      --session-len ${MODEL_CONTEXT_LENGTH} 
-      --dtype float16
-      --cache-max-entry-count 0.1
+      --model-path ${MODEL_NAME} 
+      --tp-size 1
+      --host 0.0.0.0
+      --port 35640
+      --enable-torch-compile
     deploy:
       resources:
         reservations:
