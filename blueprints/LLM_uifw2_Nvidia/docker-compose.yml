@@ -12,7 +12,6 @@ services:
       - NCCL_DEBUG=INFO
       - CUDA_VISIBLE_DEVICES=0
     shm_size: 32gb
-    entrypoint: uifw
     command: >
       serve api_server ${MODEL_NAME} 
       --server-port 35640 
