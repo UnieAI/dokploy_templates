@@ -5,13 +5,11 @@ services:
     image: registry.unieai.com/unieverse-private/uifw2.cuda.s.048
     volumes:
     - "./weight:/weight"
-    ports:
-    - 35640:35640
     runtime: nvidia
     environment:
     - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
-    - CUDA_VISIBLE_DEVICES=0
+    # - CUDA_VISIBLE_DEVICES=0
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     shm_size: 32gb
     command: [serve, api_server, meta-llama/Llama-3.1-8B-Instruct, --server-port,
