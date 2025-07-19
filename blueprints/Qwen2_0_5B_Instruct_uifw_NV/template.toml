@@ -1,0 +1,10 @@
+[variables]
+main_domain = "${domain}"
+
+[config]
+mounts = []
+
+[[config.domains]]
+serviceName = "unieinfra"
+port = 35640
+host = "${main_domain}"
