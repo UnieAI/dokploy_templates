@@ -12,7 +12,7 @@ services:
     # - CUDA_VISIBLE_DEVICES=0
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     shm_size: 32gb
-    command: [with-l090, uifw, serve, api_server, meta-llama/Llama-3.2-11B-Vision, --server-port, '35640',
+    command: [with-u010, uifw, serve, api_server, meta-llama/Llama-3.2-11B-Vision, --server-port, '35640',
       --log-level, INFO, --model-name, Llama-3.2-11B-Vision, --session-len, '1024',
       --dtype, float16, --cache-max-entry-count, '0.1']
     deploy:
