@@ -2,7 +2,7 @@
 version: '3.8'
 services:
   unieinfra:
-    image: registry.unieai.com/unieverse/uifw-one:latest
+    image: registry.unieai.com/unieverse-temp/uifw-one-2e3075d:latest
     volumes:
     - "./weight:/weight"
     runtime: nvidia
