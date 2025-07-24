@@ -9,7 +9,7 @@ services:
     environment:
     - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
-    - HUGGING_FACE_HUB_TOKEN=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
+    - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, mistralai/Mixtral-8x7B-Instruct-v0.1, --server-port,
       '35640', --log-level, INFO, --model-name, Mixtral-8x7B-Instruct-v0.1, --session-len,
