@@ -168,23 +168,6 @@
     ]
   },
   {
-    "id": "Llama_3_2_11B_Vision_vllm_NV",
-    "name": "Llama-3.2-11B-Vision-vllm-NV",
-    "version": "0.0.0",
-    "description": "Llama-3.2-11B-Vision model served via vllm.",
-    "logo": "nvidia.png",
-    "links": {
-      "github": "https://github.com",
-      "website": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision",
-      "docs": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision"
-    },
-    "tags": [
-      "llm model",
-      "vllm",
-      "NVIDIA"
-    ]
-  },
-  {
     "id": "Qwen3_30B_A3B_vllm_NV",
     "name": "Qwen3-30B-A3B-vllm-NV-vllm-NV",
     "version": "0.0.0",
