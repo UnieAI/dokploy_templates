@@ -1,4 +1,4 @@
-#! unieinfra.resource: 80GiB
+#! unieinfra.resource: 75GiB
 version: '3.8'
 services:
   unieinfra:
