@@ -10,5 +10,5 @@ services:
     # volumes:
     #   - /data1/models:/models
     entrypoint: vllm
-    command: [serve, mistral/Mixtral-8x7B-Instruct-v0.1, --port, '8000', --host, 0.0.0.0,
+    command: [serve, mistralai/Mixtral-8x7B-Instruct-v0.1, --port, '8000', --host, 0.0.0.0,
       --tensor-parallel-size, '1', --served-model-name, vLLM/Mixtral-8x7B-Instruct-v0.1]
