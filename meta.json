@@ -117,6 +117,108 @@
     ]
   },
   {
+    "id": "Llama_3_1_8B_Instruct_vllm_NV",
+    "name": "Llama-3.1-8B-Instruct",
+    "version": "0.0.0",
+    "description": "Llama-3.1-8B-Instruct model served via vllm.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "docs": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Llama_3_1_70B_Instruct_vllm_NVx4",
+    "name": "Llama-3.1-70B-Instruct (H100 x4)",
+    "version": "0.0.0",
+    "description": "Llama-3.1-70B-Instruct model served via vllm.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "docs": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Llama_3_1_70B_Instruct_vllm_NVx8",
+    "name": "Llama-3.1-70B-Instruct (H100 x8)",
+    "version": "0.0.0",
+    "description": "Llama-3.1-70B-Instruct model served via vllm.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "docs": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Llama_3_2_11B_Vision_vllm_NV",
+    "name": "Llama-3.2-11B-Vision",
+    "version": "0.0.0",
+    "description": "Llama-3.2-11B-Vision model served via vllm.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision",
+      "docs": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Qwen3_30B_A3B_vllm_NV",
+    "name": "Qwen3-30B-A3B-vllm-NV",
+    "version": "0.0.0",
+    "description": "Qwen3-30B-A3B model served via vllm.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "docs": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Mixtral_8x7B_Instruct_v0_1_vllm_NV",
+    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "version": "0.0.0",
+    "description": "Mixtral-8x7B-Instruct-v0.1n model served via vllm.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "docs": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
     "id": "Llama_3_1_8B_Instruct_vllm_Gaudi",
     "name": "Llama-3.1-8B-Instruct",
     "version": "0.0.0",
