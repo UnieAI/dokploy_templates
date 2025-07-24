@@ -16,7 +16,7 @@
   },
   {
     "id": "Llama_3_1_8B_Instruct_uifw_NV",
-    "name": "Llama-3.1-8B-Instruct",
+    "name": "Llama-3.1-8B-Instruct-uifw-NV",
     "version": "0.0.0",
     "description": "Llama-3.1-8B-Instruct model served via UnieInfra.",
     "logo": "nvidia.png",
@@ -33,7 +33,7 @@
   },
   {
     "id": "Llama_3_1_70B_Instruct_uifw_NVx4",
-    "name": "Llama-3.1-70B-Instruct (H100 x4)",
+    "name": "Llama-3.1-70B-Instruct (H100 x4)-uifw-NV",
     "version": "0.0.0",
     "description": "Llama-3.1-70B-Instruct model served via UnieInfra.",
     "logo": "nvidia.png",
@@ -50,7 +50,7 @@
   },
   {
     "id": "Llama_3_1_70B_Instruct_uifw_NVx8",
-    "name": "Llama-3.1-70B-Instruct (H100 x8)",
+    "name": "Llama-3.1-70B-Instruct (H100 x8)-uifw-NV",
     "version": "0.0.0",
     "description": "Llama-3.1-70B-Instruct model served via UnieInfra.",
     "logo": "nvidia.png",
@@ -67,7 +67,7 @@
   },
   {
     "id": "Llama_3_2_11B_Vision_uifw_NV",
-    "name": "Llama-3.2-11B-Vision",
+    "name": "Llama-3.2-11B-Vision-uifw-NV",
     "version": "0.0.0",
     "description": "Llama-3.2-11B-Vision model served via UnieInfra.",
     "logo": "nvidia.png",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Mixtral_8x7B_Instruct_v0_1_uifw_NV",
-    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "name": "Mixtral-8x7B-Instruct-v0.1-uifw-NV",
     "version": "0.0.0",
     "description": "Mixtral-8x7B-Instruct-v0.1n model served via UnieInfra.",
     "logo": "nvidia.png",
@@ -118,7 +118,7 @@
   },
   {
     "id": "Llama_3_1_8B_Instruct_vllm_NV",
-    "name": "Llama-3.1-8B-Instruct",
+    "name": "Llama-3.1-8B-Instruct-vllm-NV",
     "version": "0.0.0",
     "description": "Llama-3.1-8B-Instruct model served via vllm.",
     "logo": "nvidia.png",
@@ -129,13 +129,13 @@
     },
     "tags": [
       "llm model",
-      "unieinfra",
+      "vllm",
       "NVIDIA"
     ]
   },
   {
     "id": "Llama_3_1_70B_Instruct_vllm_NVx4",
-    "name": "Llama-3.1-70B-Instruct (H100 x4)",
+    "name": "Llama-3.1-70B-Instruct (H100 x4)-vllm-NV",
     "version": "0.0.0",
     "description": "Llama-3.1-70B-Instruct model served via vllm.",
     "logo": "nvidia.png",
@@ -146,13 +146,13 @@
     },
     "tags": [
       "llm model",
-      "unieinfra",
+      "vllm",
       "NVIDIA"
     ]
   },
   {
     "id": "Llama_3_1_70B_Instruct_vllm_NVx8",
-    "name": "Llama-3.1-70B-Instruct (H100 x8)",
+    "name": "Llama-3.1-70B-Instruct (H100 x8)-vllm-NV",
     "version": "0.0.0",
     "description": "Llama-3.1-70B-Instruct model served via vllm.",
     "logo": "nvidia.png",
@@ -163,13 +163,13 @@
     },
     "tags": [
       "llm model",
-      "unieinfra",
+      "vllm",
       "NVIDIA"
     ]
   },
   {
     "id": "Llama_3_2_11B_Vision_vllm_NV",
-    "name": "Llama-3.2-11B-Vision",
+    "name": "Llama-3.2-11B-Vision-vllm-NV",
     "version": "0.0.0",
     "description": "Llama-3.2-11B-Vision model served via vllm.",
     "logo": "nvidia.png",
@@ -180,13 +180,13 @@
     },
     "tags": [
       "llm model",
-      "unieinfra",
+      "vllm",
       "NVIDIA"
     ]
   },
   {
     "id": "Qwen3_30B_A3B_vllm_NV",
-    "name": "Qwen3-30B-A3B-vllm-NV",
+    "name": "Qwen3-30B-A3B-vllm-NV-vllm-NV",
     "version": "0.0.0",
     "description": "Qwen3-30B-A3B model served via vllm.",
     "logo": "nvidia.png",
@@ -197,13 +197,13 @@
     },
     "tags": [
       "llm model",
-      "unieinfra",
+      "vllm",
       "NVIDIA"
     ]
   },
   {
     "id": "Mixtral_8x7B_Instruct_v0_1_vllm_NV",
-    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "name": "Mixtral-8x7B-Instruct-v0.1-vllm-NV",
     "version": "0.0.0",
     "description": "Mixtral-8x7B-Instruct-v0.1n model served via vllm.",
     "logo": "nvidia.png",
@@ -214,7 +214,7 @@
     },
     "tags": [
       "llm model",
-      "unieinfra",
+      "vllm",
       "NVIDIA"
     ]
   },
