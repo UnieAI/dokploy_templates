@@ -1,4 +1,4 @@
-#! unieinfra.resource: 24GiB
+#! unieinfra.resource: 300GiB
 version: '3.8'
 services:
   unieinfra:
@@ -11,10 +11,10 @@ services:
     - NCCL_DEBUG=INFO
     # - CUDA_VISIBLE_DEVICES=0
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
-    shm_size: 32gb
+    shm_size: 80gb
     command: [with-u010, uifw, serve, api_server, mistral/Mixtral-8x7B-Instruct-v0.1, --server-port,
       '35640', --log-level, INFO, --model-name, Mixtral-8x7B-Instruct-v0.1, --session-len,
-      '1024', --dtype, float16, --cache-max-entry-count, '0.1']
+      '1024', --dtype, float16, --cache-max-entry-count, '0.1', --tp, '4']
     deploy:
       resources:
         reservations:

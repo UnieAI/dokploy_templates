@@ -32,8 +32,25 @@
     ]
   },
   {
-    "id": "Llama_3_1_70B_Instruct_uifw_NV",
-    "name": "Llama-3.1-70B-Instruct",
+    "id": "Llama_3_1_70B_Instruct_uifw_NVx4",
+    "name": "Llama-3.1-70B-Instruct (H100 x4)",
+    "version": "0.0.0",
+    "description": "Llama-3.1-70B-Instruct model served via UnieInfra.",
+    "logo": "nvidia.png",
+    "links": {
+      "github": "https://github.com",
+      "website": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "docs": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct"
+    },
+    "tags": [
+      "llm model",
+      "unieinfra",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "Llama_3_1_70B_Instruct_uifw_NVx8",
+    "name": "Llama-3.1-70B-Instruct (H100 x8)",
     "version": "0.0.0",
     "description": "Llama-3.1-70B-Instruct model served via UnieInfra.",
     "logo": "nvidia.png",
