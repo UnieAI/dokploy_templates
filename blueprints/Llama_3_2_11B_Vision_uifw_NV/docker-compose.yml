@@ -1,4 +1,4 @@
-#! unieinfra.resource: 24GiB
+#! unieinfra.resource: 160GiB
 version: '3.8'
 services:
   unieinfra:
@@ -9,7 +9,6 @@ services:
     environment:
     - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
-    # - CUDA_VISIBLE_DEVICES=0
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, meta-llama/Llama-3.2-11B-Vision, --server-port, '35640',
