@@ -10,7 +10,7 @@ services:
     - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
-    shm_size: 80gb
+    shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, meta-llama/Llama-3.1-70B-Instruct, --server-port,
       '35640', --log-level, INFO, --model-name, Llama-3.1-70B-Instruct, --session-len,
       '1024', --dtype, float16, --cache-max-entry-count, '0.1', --tp, '4']

@@ -9,11 +9,10 @@ services:
     environment:
     - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
-    - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
-    shm_size: 80gb
+    shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, Qwen/Qwen3-30B-A3B, --server-port,
       '35640', --log-level, INFO, --model-name, Qwen3-30B-A3B, --session-len,
-      '1024', --dtype, float16, --cache-max-entry-count, '0.1', --tp, '2']
+      '1024', --dtype, float16, --cache-max-entry-count, '0.1']
     deploy:
       resources:
         reservations:
