@@ -10,7 +10,7 @@ services:
     - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
-    shm_size: 80gb
+    shm_size: 256gb
     entrypoint: vllm
     command: [serve, meta-llama/Llama-3.2-11B-Vision,
               --port, '8910',
