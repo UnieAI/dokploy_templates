@@ -19,7 +19,8 @@ services:
           "--served-model-name=Llama-3.2-11B-Vision",
           "--trust_remote_code",
           "--max-model-len=32768",
-          "--max-num-seqs=128"]
+          "--max-num-seqs=128",
+          "--chat-template=/app/chat_template.jinja"]
     deploy:
       resources:
         reservations:
