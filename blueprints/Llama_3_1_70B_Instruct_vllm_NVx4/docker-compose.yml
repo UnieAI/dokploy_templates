@@ -7,7 +7,6 @@ services:
     - "./weight:/weight"
     runtime: nvidia
     environment:
-    # - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     shm_size: 32gb

@@ -7,7 +7,6 @@ services:
     - "./weight:/weight"
     runtime: nvidia
     environment:
-    # - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
     shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, Qwen/Qwen3-30B-A3B, --server-port,
