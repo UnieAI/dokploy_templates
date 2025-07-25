@@ -16,7 +16,7 @@ services:
               --port, '8910',
               --host, 0.0.0.0,
               --tensor-parallel-size, '8',
-              --served-model-name, test,
+              --served-model-name, Llama-3.1-70B-Instruct,
               --trust_remote_code,
               --enable-prefix-caching]
     deploy:

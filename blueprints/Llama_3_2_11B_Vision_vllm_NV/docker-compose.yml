@@ -16,7 +16,7 @@ services:
           "--host", "0.0.0.0",
           "--tensor-parallel-size=2",
           "--limit-mm-per-prompt=image=1,video=1",
-          "--served-model-name=test",
+          "--served-model-name=Llama-3.2-11B-Vision",
           "--trust_remote_code",
           "--max-model-len=32768",
           "--max-num-seqs=128"]
