@@ -7,18 +7,19 @@ services:
     - "./weight:/weight"
     runtime: nvidia
     environment:
-    - NCCL_SHM_DISABLE=1
     - NCCL_DEBUG=INFO
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
-    shm_size: 256gb
+    shm_size: 128gb
     entrypoint: vllm
-    command: [serve, meta-llama/Llama-3.2-11B-Vision,
-              --port, '8910',
-              --host, 0.0.0.0,
-              --tensor-parallel-size, '2',
-              --served-model-name, test,
-              --trust_remote_code,
-              --enable-prefix-caching]
+    command: [serve, "meta-llama/Llama-3.2-11B-Vision",
+          "--port", "8910",
+          "--host", "0.0.0.0",
+          "--tensor-parallel-size=2",
+          "--limit-mm-per-prompt=image=1,video=1",
+          "--served-model-name=test",
+          "--trust_remote_code",
+          "--max-model-len=32768",
+          "--max-num-seqs=128"]
     deploy:
       resources:
         reservations:
