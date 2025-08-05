@@ -6,5 +6,5 @@ mounts = []
 
 [[config.domains]]
 serviceName = "unieinfra"
-port = 35640
+port = 8910
 host = "${main_domain}"
