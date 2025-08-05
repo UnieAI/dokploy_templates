@@ -14,4 +14,4 @@ services:
       - CUDA_VISIBLE_DEVICES=0
     shm_size: 256gb
     entrypoint: uifw
-    command: serve api_server Qwen/Qwen2-0.5B-Instruct --backend=turbomind --tp=1  --server-port=8910 --model-name=Qwen2-0.5B-Instruct --enable-prefix-caching --chat-template=mixtral
+    command: serve api_server Qwen/Qwen2.5-1.5B-Instruct --backend=turbomind --tp=1  --server-port=8910 --model-name=Qwen2.5-1.5B-Instruct --enable-prefix-caching --chat-template=mixtral
