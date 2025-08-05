@@ -8,7 +8,6 @@ services:
     runtime: nvidia
     environment:
     - NCCL_DEBUG=INFO
-    - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     shm_size: 32gb
     entrypoint: vllm
     command: [serve, Qwen/Qwen3-30B-A3B,

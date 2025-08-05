@@ -202,11 +202,11 @@
     ]
   },
   {
-    "id": "Qwen3_30B_A3B_vllm_NV",
-    "name": "Qwen3-30B-A3B-vllm-NV-vllm-NV",
+    "id": "Qwen3_30B_A3B_vllm",
+    "name": "Qwen3-30B-A3B-vllm-NV-vllm",
     "version": "0.0.0",
     "description": "Qwen3-30B-A3B model served via vllm.",
-    "logo": "nvidia.png",
+    "logo": "habana.png",
     "links": {
       "github": "https://github.com",
       "website": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
@@ -215,7 +215,7 @@
     "tags": [
       "llm model",
       "vllm",
-      "NVIDIA"
+      "Habana"
     ]
   },
   {
