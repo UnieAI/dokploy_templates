@@ -83,11 +83,11 @@
     ]
   },
   {
-    "id": "Qwen3_30B_A3B_uifw_NV",
-    "name": "Qwen3-30B-A3B-uifw-NV",
+    "id": "Qwen3_30B_A3B_uifw",
+    "name": "Qwen3-30B-A3B-uifw",
     "version": "0.0.0",
     "description": "Qwen3-30B-A3B model served via UnieInfra.",
-    "logo": "nvidia.png",
+    "logo": "habana.png",
     "links": {
       "github": "https://github.com",
       "website": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
@@ -96,7 +96,7 @@
     "tags": [
       "llm model",
       "unieinfra",
-      "NVIDIA"
+      "Habana"
     ]
   },
   {
@@ -266,7 +266,7 @@
     "tags": [
       "llm model",
       "vllm",
-      "Gaudi"
+      "Habana"
     ]
   },
   {
@@ -283,7 +283,7 @@
     "tags": [
       "llm model",
       "vllm",
-      "Gaudi"
+      "Habana"
     ]
   },
   {
@@ -300,7 +300,7 @@
     "tags": [
       "llm model",
       "vllm",
-      "Gaudi"
+      "Habana"
     ]
   },
   {
@@ -317,7 +317,7 @@
     "tags": [
       "llm model",
       "vllm",
-      "Gaudi"
+      "Habana"
     ]
   },
   {
