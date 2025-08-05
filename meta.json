@@ -15,15 +15,15 @@
     ]
   },
   {
-    "id": "Qwen2_0_5B_Instruct_uifw",
-    "name": "Qwen2_0_5B_Instruct_uifw",
+    "id": "Qwen3_8B_uifw",
+    "name": "Qwen3_8B_uifw",
     "version": "0.0.0",
-    "description": "Qwen2_0_5B_Instruct model served via UnieInfra.",
+    "description": "Qwen3_8B model served via UnieInfra.",
     "logo": "habana.png",
     "links": {
       "github": "https://github.com",
-      "website": "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct",
-      "docs": "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct"
+      "website": "https://huggingface.co/Qwen/Qwen3-8B",
+      "docs": "https://huggingface.co/Qwen/Qwen3-8B"
     },
     "tags": [
       "llm model",
