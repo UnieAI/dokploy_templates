@@ -26,13 +26,13 @@ const Navigation = () => {
     <div className="flex sticky top-0 bg-background/80 backdrop-blur-xs z-10 justify-between items-center p-2 py-4 lg:p-4 border-b">
       <div className="flex flex-row gap-2 justify-center items-center">
         <DokployLogo className="size-7 lg:size-10 text-black dark:text-white" />
-        <h1 className="text-2xl font-bold hidden lg:block">Dokploy Templates</h1>
+        <h1 className="text-2xl font-bold hidden lg:block">UnieAI Templates</h1>
       </div>
       <div className="flex flex-row gap-2 justify-center items-center">
         <Button
           onClick={() => {
             window.open(
-              "https://github.com/Dokploy/templates/issues/new",
+              "https://github.com/UnieAI/dokploy_templates/issues/new",
               "_blank"
             );
           }}
@@ -43,7 +43,7 @@ const Navigation = () => {
 
         <Button
           onClick={() => {
-            window.open("https://github.com/dokploy/dokploy", "_blank");
+            window.open("https://github.com/UnieAI/dokploy_templates", "_blank");
           }}
           variant="outline"
           //   className="flex cursor-pointer hover:bg-gray-400 flex-row gap-2 items-center"
