@@ -4,7 +4,12 @@ services:
   unieinfra:
     image: registry.unieai.com/unieverse/uifw-one:latest
     volumes:
-    - "./weight:/weight"
+      - "./weight:/weight"
+      - /sys:/sys:ro
+      - /etc/machine-id:/etc/machine-id:ro
+      - /etc/unieai:/etc/unieai
+    cap_add:
+      - SYS_ADMIN
     runtime: nvidia
     environment:
     - NCCL_DEBUG=INFO
