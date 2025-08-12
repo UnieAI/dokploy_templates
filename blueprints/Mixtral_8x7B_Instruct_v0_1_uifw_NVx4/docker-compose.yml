@@ -7,7 +7,7 @@ services:
       - "./weight:/weight"
       - /sys:/sys:ro
       - /etc/machine-id:/etc/machine-id:ro
-      - /etc/unieai:/etc/unieai
+      - /etc/unieai:/etc/unieai:ro
     cap_add:
       - SYS_ADMIN
     runtime: nvidia

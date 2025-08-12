@@ -3,12 +3,7 @@ services:
     image: registry.unieai.com/unieverse-private/uifw2.cuda.l.064
     volumes:
       - "./weight:/weight"
-      - /sys:/sys:ro
-      - /etc/machine-id:/etc/machine-id:ro
-      - /etc/unieai:/etc/unieai
     runtime: nvidia
-    cap_add:
-      - SYS_ADMIN
     environment:
       - NCCL_DEBUG=INFO
       - CUDA_VISIBLE_DEVICES=0
