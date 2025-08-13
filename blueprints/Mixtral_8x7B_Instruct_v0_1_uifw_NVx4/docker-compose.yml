@@ -15,6 +15,9 @@ services:
     runtime: nvidia
     environment:
     - NCCL_DEBUG=INFO
+    - NCCL_CROSS_NIC=0
+    - NCCL_IB_DISABLE=1
+    - NCCL_P2P_DISABLE=1
     - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     - HF_HOME=/cache/hf
     - HUGGINGFACE_HUB_CACHE=/cache/hf/hub
