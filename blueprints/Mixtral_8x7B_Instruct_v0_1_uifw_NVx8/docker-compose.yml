@@ -23,7 +23,7 @@ services:
     - HUGGINGFACE_HUB_CACHE=/cache/hf/hub
     shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, mistralai/Mixtral-8x7B-Instruct-v0.1, --server-port,
-      '35640', --log-level, INFO, --model-name, Mixtral-8x7B-Instruct-v0.1, --tp, '8', --enable-prefix-caching]
+      '35640', --model-name, Mixtral-8x7B-Instruct-v0.1, --tp, '8', --enable-prefix-caching]
     deploy:
       resources:
         reservations:

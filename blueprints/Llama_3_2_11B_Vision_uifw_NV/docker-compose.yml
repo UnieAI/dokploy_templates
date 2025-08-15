@@ -22,8 +22,8 @@ services:
     - HF_HOME=/cache/hf
     - HUGGINGFACE_HUB_CACHE=/cache/hf/hub
     shm_size: 80gb
-    command: [with-u010, uifw, serve, api_server, meta-llama/Llama-3.2-11B-Vision, --server-port, '35640',
-      --log-level, INFO, --model-name, Llama-3.2-11B-Vision, --tp, '2', --enable-prefix-caching]
+    command: [with-u010, uifw, serve, api_server, meta-llama/Llama-3.2-11B-Vision, --server-port, '35640', 
+      --model-name, Llama-3.2-11B-Vision, --tp, '2', --enable-prefix-caching]
     deploy:
       resources:
         reservations:

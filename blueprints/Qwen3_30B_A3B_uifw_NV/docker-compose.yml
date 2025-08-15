@@ -23,7 +23,7 @@ services:
     - HUGGINGFACE_HUB_CACHE=/cache/hf/hub
     shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, Qwen/Qwen3-30B-A3B, --server-port,
-      '35640', --log-level, INFO, --model-name, Qwen3-30B-A3B, --enable-prefix-caching]
+      '35640', --model-name, Qwen3-30B-A3B, --enable-prefix-caching]
     deploy:
       resources:
         reservations:
