@@ -24,7 +24,7 @@ services:
     shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, mistralai/Mixtral-8x7B-Instruct-v0.1, --server-port,
       '35640', --log-level, INFO, --model-name, Mixtral-8x7B-Instruct-v0.1, --session-len,
-      '1024', --dtype, float16, --cache-max-entry-count, '0.1', --tp, '8']
+      '1024', --tp, '8']
     deploy:
       resources:
         reservations:

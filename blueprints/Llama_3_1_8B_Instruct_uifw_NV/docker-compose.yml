@@ -24,7 +24,7 @@ services:
     shm_size: 32gb
     command: [with-u010, uifw, serve, api_server, meta-llama/Llama-3.1-8B-Instruct, --server-port,
       '35640', --log-level, INFO, --model-name, Llama-3.1-8B-Instruct, --session-len,
-      '1024', --dtype, float16, --cache-max-entry-count, '0.1']
+      '1024']
     deploy:
       resources:
         reservations:
