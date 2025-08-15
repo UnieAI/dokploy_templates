@@ -203,7 +203,7 @@
   },
   {
     "id": "Qwen3_30B_A3B_vllm_NV",
-    "name": "Qwen3-30B-A3B-vllm-NV-vllm-NV",
+    "name": "Qwen3-30B-A3B-vllm-NV",
     "version": "0.0.0",
     "description": "Qwen3-30B-A3B model served via vllm.",
     "logo": "nvidia.png",

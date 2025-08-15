@@ -10,6 +10,8 @@ services:
       - /etc/unieai:/etc/unieai:ro
     tmpfs:
       - /cache/hf
+    ports:
+      - 35640:8910
     cap_add:
       - SYS_ADMIN
     runtime: nvidia
