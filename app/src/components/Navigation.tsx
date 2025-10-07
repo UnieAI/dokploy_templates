@@ -33,14 +33,10 @@ const Navigation = () => {
       <div className="flex flex-row gap-2 justify-center items-center">
         <Button
           onClick={() => {
-            // window.open(
-            //   "https://github.com/Dokploy/templates/issues/new",
-            //   "_blank"
-            // );
-            toast.info("Feature coming soon!", {
-              position: "top-right",
-              duration: 1000
-            });
+            window.open(
+              "https://github.com/Dokploy/templates/issues/new",
+              "_blank"
+            );
           }}
         >
           Add Template
