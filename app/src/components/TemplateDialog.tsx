@@ -99,14 +99,14 @@ const TemplateDialog: React.FC<TemplateDialogProps> = ({
                       Docs
                     </a>
                   )}
-                  <a
+                  {/* <a
                     href={`https://github.com/UnieAI/dokploy_templates/tree/unieai/blueprints/${selectedTemplate?.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-gray-900"
                   >
                     Edit Template
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
