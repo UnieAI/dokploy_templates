@@ -388,7 +388,7 @@
       "website": "https://om.uusec.com/",
       "docs": "https://github.com/Safe3/openresty-manager"
     },
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "tags": [
       "web",
       "proxy",
@@ -483,7 +483,7 @@
     "name": "PocketBase",
     "description": "Open Source backend in 1 file",
     "version": "v0.28.0",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/pocketbase/pocketbase",
       "website": "https://pocketbase.io/",
@@ -502,7 +502,7 @@
     "name": "Plausible",
     "version": "v2.1.5",
     "description": "Plausible is a open source, self-hosted web analytics platform that lets you track website traffic and user behavior.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/plausible/plausible",
       "website": "https://plausible.io/",
@@ -2798,7 +2798,7 @@
     "name": "AdGuard Home",
     "version": "latest",
     "description": "AdGuard Home is a comprehensive solution designed to enhance your online browsing experience by eliminating all kinds of ads, from annoying banners and pop-ups to intrusive video ads. It provides privacy protection, browsing security, and parental control features while maintaining website functionality.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/AdguardTeam/AdGuardHome",
       "website": "https://adguard.com",
@@ -2818,7 +2818,7 @@
     "name": "Adminer",
     "version": "4.8.1",
     "description": "Adminer is a comprehensive database management tool that supports MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, Elasticsearch, MongoDB and others. It provides a clean interface for efficient database operations, with strong security features and extensive customization options.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/vrana/adminer",
       "website": "https://www.adminer.org/",
@@ -2970,7 +2970,7 @@
     "name": "Argilla",
     "version": "latest",
     "description": "Argilla is a robust platform designed to help engineers and data scientists streamline the management of machine learning data workflows. It simplifies tasks like data labeling, annotation, and quality control.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/argilla-io/argilla",
       "website": "https://www.argilla.io/",
@@ -3123,7 +3123,7 @@
     "name": "Beszel",
     "version": "0.10.2",
     "description": "A lightweight server monitoring hub with historical data, docker stats, and alerts.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/henrygd/beszel",
       "website": "https://beszel.dev",
@@ -3160,7 +3160,7 @@
     "name": "BookStack",
     "version": "24.12.1",
     "description": "BookStack is a self-hosted platform for creating beautiful, feature-rich documentation sites.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/BookStackApp/BookStack",
       "website": "https://www.bookstackapp.com",
@@ -3408,7 +3408,7 @@
     "name": "CodeX Docs",
     "version": "v2.2",
     "description": "CodeX is a comprehensive platform that brings together passionate engineers, designers, and specialists to create high-quality open-source projects. It includes Editor.js, Hawk.so, CodeX Notes, and more.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/codex-team/codex.docs",
       "website": "https://codex.so",
@@ -3427,7 +3427,7 @@
     "name": "Colanode Server",
     "version": "v0.1.6",
     "description": "Open-source and local-first Slack and Notion alternative that puts you in control of your data",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/colanode/colanode",
       "website": "https://colanode.com",
@@ -3446,7 +3446,7 @@
     "name": "Collabora Office",
     "version": "latest",
     "description": "Collabora Online is a powerful, flexible, and secure online office suite designed to break free from vendor lock-in and put you in full control of your documents.",
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "links": {
       "github": "https://github.com/CollaboraOnline",
       "website": "https://collaboraonline.com",
@@ -3470,7 +3470,7 @@
       "docs": "https://confluence.atlassian.com/doc/confluence-documentation-135922.html",
       "github": "https://confluence.atlassian.com"
     },
-    "logo": "logo.svg",
+    "logo": "logo.png",
     "tags": [
       "collaboration",
       "documentation",

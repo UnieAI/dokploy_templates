@@ -3,6 +3,7 @@ import { Plus, StarIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import DokployLogo from "./ui/dokploy-logo";
+import { toast } from "sonner";
 
 const Navigation = () => {
   const [githubStars, setGithubStars] = useState(0);
@@ -25,23 +26,28 @@ const Navigation = () => {
   return (
     <div className="flex sticky top-0 bg-background/80 backdrop-blur-xs z-10 justify-between items-center p-2 py-4 lg:p-4 border-b">
       <div className="flex flex-row gap-2 justify-center items-center">
-        <DokployLogo className="size-7 lg:size-10 text-black dark:text-white" />
-        <h1 className="text-2xl font-bold hidden lg:block">Dokploy Templates</h1>
+        {/* <DokployLogo className="size-7 lg:size-10 text-black dark:text-white" /> */}
+        <img src="/logo.png" alt="UnieVerse Logo" className="h-8 w-8 lg:h-10 lg:w-10" />
+        <h1 className="text-2xl font-bold hidden lg:block">UnieVerse Templates</h1>
       </div>
       <div className="flex flex-row gap-2 justify-center items-center">
         <Button
           onClick={() => {
-            window.open(
-              "https://github.com/Dokploy/templates/issues/new",
-              "_blank"
-            );
+            // window.open(
+            //   "https://github.com/Dokploy/templates/issues/new",
+            //   "_blank"
+            // );
+            toast.info("Feature coming soon!", {
+              position: "top-right",
+              duration: 1000
+            });
           }}
         >
           Add Template
           <Plus />
         </Button>
 
-        <Button
+        {/* <Button
           onClick={() => {
             window.open("https://github.com/dokploy/dokploy", "_blank");
           }}
@@ -65,7 +71,7 @@ const Navigation = () => {
               fill="currentColor"
             ></path>
           </svg>
-        </Button>
+        </Button> */}
         <ModeToggle />
       </div>
     </div>
