@@ -11,4 +11,4 @@ host = "${main_domain}"
 
 [config.env]
 OLLAMA_DOCKER_TAG = "0.1.47"
-WEBUI_DOCKER_TAG = "0.6.2"
+WEBUI_DOCKER_TAG = "0.6.33"
