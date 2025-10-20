@@ -26,6 +26,6 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ['templates.unieai.com'],
+    allowedHosts: ['template.unieai.com'],
   }
 })

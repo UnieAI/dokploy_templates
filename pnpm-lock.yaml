@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      pnpm:
+        specifier: ^10.18.3
+        version: 10.18.3
+
+packages:
+
+  pnpm@10.18.3:
+    resolution: {integrity: sha512-u9FubXKG/X4B9rPAs8kyzaKWXAapCDKPdGY/EKmupR8RKe6mFRNL+ZKDGwCeq+Fn7LcAi1l/QP+bx1lGqt+wjQ==}
+    engines: {node: '>=18.12'}
+    hasBin: true
+
+snapshots:
+
+  pnpm@10.18.3: {}
